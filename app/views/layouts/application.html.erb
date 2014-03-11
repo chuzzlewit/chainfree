@@ -1,13 +1,18 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Chainfree</title>
+	<head>
+		<title>Chained Freedom | <%= yield(:title) %></title>
   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <%= csrf_meta_tags %>
-</head>
-<body>
+  	</head>
 
+<body>
+<ul>
+	<li> <a href="http://chainfree.herokuapp.com/home">Home</a></li>
+	<li> <a href="http://chainfree.herokuapp.com/about">About</a></li>
+	<li> <a href="http://chainfree.herokuapp.com/help">Help</a></li>
+</ul>
 <%= yield %>
 
 </body>
