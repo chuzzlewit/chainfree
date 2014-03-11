@@ -6,8 +6,8 @@
 development:
   adapter: postgresql
   host: localhost
-  username: user
   database: app-dev
+
 
 
 # Warning: The database defined as "test" will be erased and
