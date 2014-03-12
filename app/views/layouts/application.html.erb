@@ -8,13 +8,20 @@
   	</head>
 
 <body>
-<ul>
+<header class="navbar navbar-fixed-top navbar-inverse">
+      <div class="navbar-inner">
+        <div class="container">
+<ul class="nav">
 	<li> <a href="http://chainfree.herokuapp.com/home">Home</a></li>
 	<li> <a href="http://chainfree.herokuapp.com/about">About</a></li>
 	<li> <a href="http://chainfree.herokuapp.com/contact">Contact</a></li>
 	<li> <a href="http://chainfree.herokuapp.com/help">Help</a></li>
 </ul>
+ </div>
+      </div>
+    </header>
+    <div class="container">
 <%= yield %>
-
+</div>
 </body>
 </html>
