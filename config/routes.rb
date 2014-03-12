@@ -1,4 +1,6 @@
 Chainfree::Application.routes.draw do
+  resources :articles
+
   get "static_pages/home"
   get "static_pages/about"
   get "static_pages/contact"
