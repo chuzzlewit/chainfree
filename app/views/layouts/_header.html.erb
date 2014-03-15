@@ -1,0 +1,26 @@
+<header class="navbar navbar-fixed-top navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <nav>
+          <ul class="navbar-nav">
+          <li><img alt="cflogo" src="/assets/logo1.png" height="50"/></li>
+          </ul>
+        <ul class="nav navbar-nav">
+          <li>
+            <%=link_to("Home",{:controller => :static_pages,:action=>'home'}) %></li>
+          <li>
+            <%=link_to("About",{:controller => :static_pages,:action=>'about'}) %></li>
+          <li>
+
+            <%=link_to("Contact",{:controller => :static_pages,:action=>'contact'}) %></li>
+          <li>
+            <%=link_to("Help",{:controller => :static_pages,:action=>'help'}) %></li>
+
+
+        </ul>
+
+      </nav>
+    </div>
+  </div>
+
+</header>

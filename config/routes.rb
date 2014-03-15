@@ -1,8 +1,10 @@
 Chainfree::Application.routes.draw do
 
+  get "users/new"
 root "static_pages#home"
-
 match ':controller(/:action(/:id))', :via => :get
+match '/signup',  to: 'users#new', :via => :get
+
 
   #get "static_pages/home"
   #get "static_pages/about"
