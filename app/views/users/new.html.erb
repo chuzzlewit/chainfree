@@ -1,110 +1,109 @@
 <% provide(:title, 'Sign up') %>
 
-<h1>Survey</h1>
-
+<h2>Survey</h2>
+<br>
 <form class="form-horizontal">
 <fieldset>
-
 <!-- Form Name -->
-<legend>Chained Freedom Survey</legend>
-
-<!-- Multiple Radios (inline) -->
-<div class="control-group">
-  <label class="control-label" for="City Ranking">How high is Charlotte ranked nationally in terms of human trafficking?</label>
-  <div class="controls">
-    <label class="radio inline" for="City Ranking-0">
-      <input name="City Ranking" id="City Ranking-0" value="Top 100" checked="checked" type="radio">
-      Top 100
-    </label>
-    <label class="radio inline" for="City Ranking-1">
-      <input name="City Ranking" id="City Ranking-1" value="Top 75" type="radio">
-      Top 75
-    </label>
-    <label class="radio inline" for="City Ranking-2">
-      <input name="City Ranking" id="City Ranking-2" value="Top 20" type="radio">
-      Top 20
-    </label>
-    <label class="radio inline" for="City Ranking-3">
-      <input name="City Ranking" id="City Ranking-3" value="Top 5" type="radio">
-      Top 5
-    </label>
-  </div>
-</div>
-
-<!-- Multiple Radios (inline) -->
-<div class="control-group">
-  <label class="control-label" for="Youngest Age">What is the youngest age of a trafficking victim?</label>
-  <div class="controls">
-    <label class="radio inline" for="Youngest Age-0">
-      <input name="Youngest Age" id="Youngest Age-0" value="6" checked="checked" type="radio">
-      6
-    </label>
-    <label class="radio inline" for="Youngest Age-1">
-      <input name="Youngest Age" id="Youngest Age-1" value="8" type="radio">
-      8
-    </label>
-    <label class="radio inline" for="Youngest Age-2">
-      <input name="Youngest Age" id="Youngest Age-2" value="10" type="radio">
-      10
-    </label>
-    <label class="radio inline" for="Youngest Age-3">
-      <input name="Youngest Age" id="Youngest Age-3" value="12" type="radio">
-      12
-    </label>
-    <label class="radio inline" for="Youngest Age-4">
-      <input name="Youngest Age" id="Youngest Age-4" value="14" type="radio">
-      14
-    </label>
-    <label class="radio inline" for="Youngest Age-5">
-      <input name="Youngest Age" id="Youngest Age-5" value="16" type="radio">
-      16
-    </label>
-    <label class="radio inline" for="Youngest Age-6">
-      <input name="Youngest Age" id="Youngest Age-6" value="18" type="radio">
-      18
-    </label>
-  </div>
-</div>
+<legend><small>How much do you know about human trafficking?</small></legend>
 
 <!-- Select Basic -->
-<div class="control-group">
-  <label class="control-label" for="selectbasic">What is the percentage of girls that are victims of human trafficking compared to boys?</label>
-  <div class="controls">
-    <select id="selectbasic" name="selectbasic" class="input-xlarge">
-      <option>1 to 10</option>
-      <option>1 to 2</option>
-      <option>2 to 1</option>
-      <option>10 to 1</option>
+<div class="form-group">
+  <label class="col-md-4 control-label" for="selectbasic">How high is Charlotte ranked nationally in terms of human trafficking? </label>
+  <div class="col-md-5">
+    <select id="selectbasic" name="selectbasic" class="form-control">
+      <option value="100">Top 100</option>
+      <option value="75">Top 75</option>
+      <option value="20">Top 20</option>
+      <option value="5">Top 5</option>
     </select>
   </div>
 </div>
 
+<!-- Select Basic -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="selectbasic">What is the youngest age of a trafficking victim?</label>
+  <div class="col-md-4">
+    <select id="selectbasic" name="selectbasic" class="form-control">
+      <option value="6">6</option>
+      <option value="7">7</option>
+      <option value="8">8</option>
+      <option value="9">9</option>
+      <option value="10">10</option>
+      <option value="11">11</option>
+      <option value="12">12</option>
+      <option value="13">13</option>
+      <option value="14">14</option>
+      <option value="15">15</option>
+      <option value="16">16</option>
+      <option value="17">17</option>
+      <option value="18">18</option>
+    </select>
+  </div>
+</div>
+
+<!-- Appended Input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="appendedtext">What is the percentage of girls that are victims of human trafficking compared to boys?</label>
+  <div class="col-md-4">
+    <div class="input-group">
+      <input id="appendedtext" name="appendedtext" class="form-control" placeholder="10" type="text">
+      <span class="input-group-addon">female victims for every male</span>
+    </div>
+    <p class="help-block">how many female victims compared to every male victims</p>
+  </div>
+</div>
 <!-- Multiple Checkboxes (inline) -->
-<div class="control-group">
-  <label class="control-label" for="checkboxes">Do you think its OK to pay for:</label>
-  <div class="controls">
-    <label class="checkbox inline" for="checkboxes-0">
-      <input name="checkboxes" id="checkboxes-0" value="Sex" type="checkbox">
+<div class="form-group">
+  <label class="col-md-4 control-label" for="checkboxes">Do you think its OK to pay for: (Check all that apply)</label>
+  <div class="col-md-4">
+    <label class="checkbox-inline" for="checkboxes-0">
+      <input name="checkboxes" id="checkboxes-0" value="1" type="checkbox">
       Sex
     </label>
-    <label class="checkbox inline" for="checkboxes-1">
-      <input name="checkboxes" id="checkboxes-1" value="Laundry Services" type="checkbox">
+    <label class="checkbox-inline" for="checkboxes-1">
+      <input name="checkboxes" id="checkboxes-1" value="2" type="checkbox">
       Laundry Services
     </label>
-    <label class="checkbox inline" for="checkboxes-2">
-      <input name="checkboxes" id="checkboxes-2" value="Landscaping" type="checkbox">
+    <label class="checkbox-inline" for="checkboxes-2">
+      <input name="checkboxes" id="checkboxes-2" value="3" type="checkbox">
       Landscaping
     </label>
-    <label class="checkbox inline" for="checkboxes-3">
-      <input name="checkboxes" id="checkboxes-3" value="House Services" type="checkbox">
+    <label class="checkbox-inline" for="checkboxes-3">
+      <input name="checkboxes" id="checkboxes-3" value="4" type="checkbox">
       House Services
     </label>
-    <label class="checkbox inline" for="checkboxes-4">
-      <input name="checkboxes" id="checkboxes-4" value="Nannying" type="checkbox">
+    <label class="checkbox-inline" for="checkboxes-4">
+      <input name="checkboxes" id="checkboxes-4" value="5" type="checkbox">
       Nannying
     </label>
   </div>
 </div>
+<!-- Multiple Radios -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="radios">Do you know the difference between prostitution and sex trafficking?</label>
+  <div class="col-md-4">
+  <div class="radio">
+    <label for="radios-0">
+      <input name="radios" id="radios-0" value="1" checked="checked" type="radio">
+      Yes
+    </label>
+	</div>
+  <div class="radio">
+    <label for="radios-1">
+      <input name="radios" id="radios-1" value="2" type="radio">
+      No
+    </label>
+	</div>
+  </div>
+</div>
 
+<br>
+<!-- Button -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="singlebutton"></label>
+  <div class="col-md-4">
+    <button id="singlebutton" name="singlebutton" class="btn btn-default">Submit</button>
+  </div>
 </fieldset>
 </form>
