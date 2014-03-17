@@ -1,11 +1,15 @@
+<%= image_tag "girl2.png", alt: "girl2", height: "250" %><br>
 
 <h1>Chained Freedom</h1>
+
 <p>
   This is the home page for the Chained Freedom sample application.
 </p>
+
 <%=link_to 'Sign up',{:controller => :users, :action=>'new'},class: "btn btn-large btn-default", type: "button" %>
 
 <hr>
+<!--
 <br><% target = "world"%>
 <%= "Hello #{target}" %>
 <br>
@@ -18,6 +22,7 @@
 <br>
 <%= link_to("Home with parameters",{:action => 'home',
   :page => 5, :id => 20}) %>
+  -->
 <!-- start slipsum code -->
 
 <h3>We happy?</h3>
